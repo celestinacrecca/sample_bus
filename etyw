@@ -1,0 +1,56 @@
+//IT112 - Group Activity 1
+#include <stdio.h>
+int main(void){
+int destination, choice, bus, fare, amount, ticket;
+printf("======================");
+printf("Welcome to Bus Station");
+printf("======================");
+printf("\n+Travel Location+\n");
+printf("[1]Valencia\t[2]Maramag\t[3]Davao");
+printf("\nSelect your destination:");
+scanf("%d", &destination);
+printf("+Select Bus+:\n\n");
+printf("[1]Rural Tours\t[2]Super V\t[3]Pabama"); 
+printf("\nEnter your choice: ");
+scanf("%d", &bus);
+    switch(choice){
+      case 1:
+          printf("Malaybalay to Valencia\n");
+          printf("Distance: 44km\n");
+          printf("Fare: Php 60\n");
+          printf("Bus:\n");
+          printf("Buy Ticket Y/N?: \n");
+          printf("Input Fare:");
+          scanf("%d",&amount);
+          change= amount-fare;
+          printf("Change:%dphp", change);
+          printf("You Have Purchased The Ticket, Thank you!");
+          break;
+      case 2:
+          printf("Malaybalay to Maramag\n");
+          printf("Distance: 57km\n");
+          printf("Fare: Php 80\n");
+          printf("Bus:\n");
+          printf("Buy Ticket Y/N?: \n");
+          printf("Input Fare: \n");
+          scanf("%d",&amount);
+          change= amount-fare;
+          printf("Change:%dphp", change);
+          printf("You Have Purchased The Ticket, Thank you!");
+          break;
+      case 3:
+          printf("Malaybalay to Davao\n");
+          printf("Distance: 164km\n");
+          printf("Fare: Php 150");
+          printf("Bus:\n");
+          printf("Buy Ticket Y/N?: \n");
+          scanf(" %c", &ticket);
+          printf("Input Fare: \n");
+          scanf("%d",&amount);
+          change= amount-fare;
+          printf("Change:%dphp", change);
+          printf("You Have Purchased The Ticket, Thank you!");
+          break;
+   }
+ }
+}
